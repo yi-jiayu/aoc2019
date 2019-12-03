@@ -1,0 +1,1 @@
+ run←{⎕←'---' ⋄ ⍺←0 ⋄ pc data←⍺ ⍵ ⋄ stop pc data1←pc step data ⋄ ⎕←stop pc data1 ⋄ stop:data1 ⋄ pc ∇ data1}
