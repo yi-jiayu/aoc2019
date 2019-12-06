@@ -1,7 +1,7 @@
 ⎕IO←0
 data←⍎¨,⎕CSV'data/day2.txt'
-op1←{a b c←⍺ ⋄ d⊣d[c]←d[a]+d[b]⊣d⊣d←⍵}
-op2←{a b c←⍺ ⋄ d⊣d[c]←d[a]×d[b]⊣d⊣d←⍵}
+op1←{a b c←⍺ ⋄ d⊣d[c]←d[a]+d[b]⊣d←⍵}
+op2←{a b c←⍺ ⋄ d⊣d[c]←d[a]×d[b]⊣d←⍵}
 ∇ step←{
     pc data←⍺ ⍵
     op a b c←data[pc+⍳4]
